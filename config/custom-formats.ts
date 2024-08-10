@@ -9,6 +9,6 @@ export const Formats: FormatList = [
     name: "[Gen 9] RUstricted",
     mod: 'gen9',
     ruleset: ['[Gen 9] ZU', 'Limit One Restricted'],
-    restricted: ['RU'],
+    restricted: ['RU', 'NUBL', 'NU', 'PUBL', 'PU', 'ZUBL'],
   }
 ];
