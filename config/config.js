@@ -61,7 +61,13 @@ exports.wsdeflate = {
  *  something.
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
-exports.ssl = null;
+exports.ssl = {
+	port: 443,
+	options: {
+		key: '/etc/letsencrypt/live/gossifleur.games/privkey.pem',
+		cert: '/etc/letsencrypt/live/gossifleur.games/fullchain.pem',
+	},
+};
 
 /*
 // example:
