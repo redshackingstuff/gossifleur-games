@@ -10,5 +10,10 @@ export const Formats: FormatList = [
     mod: 'gen9',
     ruleset: ['[Gen 9] ZU', 'Limit One Restricted'],
     restricted: ['RU', 'NUBL', 'NU', 'PUBL', 'PU', 'ZUBL'],
+  },
+  {
+    name: "[Gen 9] Boingus OU",
+    mod: 'boingusou',
+    ruleset: ['[Gen 9] National Dex'],
   }
 ];
