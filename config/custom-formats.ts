@@ -13,7 +13,7 @@ export const Formats: FormatList = [
   },
   {
     name: "[Gen 9] Boingus OU",
-    mod: 'boingusou',
+    mod: 'gen9boingusou',
     ruleset: ['[Gen 9] National Dex'],
   }
 ];
