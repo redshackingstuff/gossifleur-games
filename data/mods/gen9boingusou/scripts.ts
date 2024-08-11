@@ -2,6 +2,8 @@
 export const Scripts: ModdedBattleScriptsData = {
 	actions: {
 		useMove(moveOrMoveName, pokemon, target, sourceEffect) {
+                        const baseMove = this.battle.dex.moves.get(moveOrMoveName);
+                        let move = this.battle.dex.getActiveMove(baseMove);
 			// If target fainted
 			if (target && target.hp <= 0) {
 				// We remove recharge
