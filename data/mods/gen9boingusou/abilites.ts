@@ -2,12 +2,10 @@
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
 	// fungal touch (mega breloom's ability)
 	fungaltouch: {
-		onSourceDamagingHit(damage, target, source, move) {
-			// Despite not being a secondary, Shield Dust / Covert Cloak block Fungal Touch's effect
-			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
-			if (this.checkMoveMakesContact(move, target, source)) {
-				if (move.drain === undefined) { this.heal(damage / 3); }
-				else { move.drain[0] *= 3; move.drain[1] *= 10; }
+		onModifyMove(move) {
+			if (!move.flags['contact']) {
+				if (move.drain === undefined) { move.drain = [1, 3]; }
+				if (!move.drain === undefined) { move.drain[0] *= 13; move.drain[1] *= 10 }
 			}
 		},
 		flags: {},
