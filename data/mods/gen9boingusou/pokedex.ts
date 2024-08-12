@@ -34,6 +34,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		heightm: 1.5,
 		weightkg: 200,
 		color: "Red",
-		eggGroups: ["Mineral"]
+		eggGroups: ["Mineral"],
+		requiredItem: "Solrockite",
 	},
 }
