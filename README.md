@@ -1,3 +1,6 @@
+GG DEVLOG!!!: https://docs.google.com/document/d/1ZxJnlUbA7QFsE__xZ_OQfv7jnRYEFa0u97c3dI2etLM/edit
+
+
 Pokémon Showdown
 ========================================================================
 
