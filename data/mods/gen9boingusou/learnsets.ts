@@ -36754,6 +36754,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			focuspunch: ["9M", "9L55", "7T", "6T", "4M", "3M"],
 			forcepalm: ["9L28", "7L28", "6L28", "5L29", "4L29"],
 			frustration: ["7M", "6M", "5M", "4M", "3M"],
+			fungaljab: ["9L1"], //Breloom's Signature Move (see moves.ts)
 			furycutter: ["4T", "3T"],
 			gigadrain: ["9M", "7T", "6T", "5T", "4M", "3M"],
 			gigaimpact: ["9M", "7M", "6M", "5M", "4M"],
