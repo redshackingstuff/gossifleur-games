@@ -1,5 +1,21 @@
 // bring other abilites not in this file
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
+	// fungal touch (mega breloom's ability)
+	fungaltouch: {
+		onSourceDamagingHit(damage, target, source, move) {
+			// Despite not being a secondary, Shield Dust / Covert Cloak block Fungal Touch's effect
+			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
+			if (this.checkMoveMakesContact(move, target, source)) {
+				if (move.drain === undefined) { this.heal(damage / 3); }
+				else { move.drain[0] *= 3; move.drain[1] *= 10; }
+			}
+		},
+		flags: {},
+		name: "Fungal Touch",
+		rating: 3,
+		num: 312,
+	},
+
 	// solarize (mega solrock's ability)
 	solarize: {
 		onModifyTypePriority: -1,
@@ -24,6 +40,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Solarize",
 		// do ratings ever even get used?
 		rating: 4,
-		num: 310,
+		num: 311,
 	},
 }
