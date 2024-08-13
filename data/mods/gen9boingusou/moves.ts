@@ -1,7 +1,7 @@
 export const Moves: import('../sim/dex-moves').MoveDataTable = {
 
 //this is quite literally gonna be called phys hidden power, cause no one has come up with a good name yet, and its a very simple name
-//the moves are just copy and pasted, im just hoping thatthe code for normal hp will work for phys hp, but i may need to look into that
+//the moves are just copy and pasted, im just hoping that the code for normal hp will work for phys hp, but i may need to look into that
 
   physhiddenpower: {
 		num: 1001,
