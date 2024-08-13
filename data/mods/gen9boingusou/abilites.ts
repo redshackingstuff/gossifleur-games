@@ -3,7 +3,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	// fungal touch (mega breloom's ability)
 	fungaltouch: {
 		onModifyMove(move) {
-			if (!move.flags['contact']) {
+			if (move.flags['contact']) {
 				if (move.drain === undefined) { move.drain = [1, 3]; }
 				if (!move.drain === undefined) { move.drain[0] *= 13; move.drain[1] *= 10 }
 			}
