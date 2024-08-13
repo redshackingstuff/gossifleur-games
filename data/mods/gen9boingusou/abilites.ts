@@ -6,7 +6,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			// If a move is a contact move without draining effect, have it drain 1/3 of damage dealt
 			// If a move is a draining move, apply a big root effect, increasing drained damage by 30%
 			if (move.drain === undefined && move.flags['contact']) { move.drain = [1, 3]; }
-			else if (!move.drain === undefined) { move.drain[0] *= 13; move.drain[1] *= 10 }
+			else if (!move.drain === undefined) { move.drain[0] *= 13; move.drain[1] *= 10; }
 		},
 		flags: {},
 		name: "Fungal Touch",
