@@ -1,5 +1,6 @@
 // making hyper beam act like in gen 1 (copied right from the gen 1 code on showdown)
 export const Scripts: ModdedBattleScriptsData = {
+	gen: 9,
 	actions: {
 		useMove(moveOrMoveName, pokemon, target, sourceEffect) {
                         const baseMove = this.battle.dex.moves.get(moveOrMoveName);
