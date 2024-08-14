@@ -12,13 +12,14 @@ export const Scripts: ModdedBattleScriptsData = {
 			} else {
 	      	if (pokemon.volatiles['mustrecharge']) this.battle.add('-mustrecharge', pokemon);
 				if (pokemon.hp) this.battle.runEvent('AfterMoveSelf', pokemon, target, move);
-			}
-		}
+			},
+		},
 
 			// old gen boom, hope this works right
+		    getDamage(source, target, move, suppressMessages) {
 			if (move.selfdestruct && defType === 'def') {
 				defense = this.battle.clampIntRange(Math.floor(defense / 2), 1);
-			}
-		
-	}
+			},
+		},
+	},
 }
