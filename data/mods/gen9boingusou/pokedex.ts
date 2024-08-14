@@ -85,7 +85,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Sirfetch\u2019d-Mega",
 		baseSpecies: "Sirfetch\u2019d",
 		forme: "Mega",
-		types: ["Fighting"],
+		types: ["Fighting", "Steel"],
 		baseStats: {hp: 62, atk: 155, def: 126, spa: 97, spd: 102, spe: 65},
 		abilities: {0: "Steadfast"},
 		heightm: 0.8,
