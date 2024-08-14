@@ -94,6 +94,27 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Flying", "Field"],
 		requiredItem: "Sirfetchdite",
 	},
+	
+	solrock: {
+		inherit: true,
+			otherFormes: ["Solrock-Mega"],
+			formeOrder: ["Solrock","Solrock-Mega"]
+	},
+	solrockmega: {
+		num: 338,
+		name: "Solrock-Mega",
+		baseSpecies: "Solrock",
+		forme: "Mega",
+		types: ["Rock", "Fire"],
+		baseStats: {hp: 90, atk: 120, def: 110, spa: 55, spd: 85, spe: 105},
+		abilities: {0: "Solarize"},
+		heightm: 1.5,
+		weightkg: 200,
+		color: "Red",
+		eggGroups: ["Mineral"],
+		requiredItem: "Solrockite",
+	},
+	
 	starmie: {
 		inherit: true,
 		otherFormes: ["Starmie-Mega"],
@@ -112,5 +133,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Purple",
 		eggGroups: ["Water 3"],
 		requiredItem: "Starmite",
-	}
+	},
+
 }
