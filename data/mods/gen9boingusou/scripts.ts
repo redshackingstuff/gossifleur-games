@@ -14,5 +14,11 @@ export const Scripts: ModdedBattleScriptsData = {
 				if (pokemon.hp) this.battle.runEvent('AfterMoveSelf', pokemon, target, move);
 			}
 		}
+
+			// old gen boom, hope this works right
+			if (move.selfdestruct && defType === 'def') {
+				defense = this.battle.clampIntRange(Math.floor(defense / 2), 1);
+			}
+		
 	}
 }
