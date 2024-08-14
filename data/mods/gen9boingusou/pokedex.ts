@@ -59,7 +59,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	delibird: {
 		inherit: true,
 		otherFormes: ["Delibird-Mega"],
-    		formeOrder: ["Delibird", "Delibird-Mega"],
+    	formeOrder: ["Delibird", "Delibird-Mega"],
   	},
   	delibirdmega: {
 		num: 225,
