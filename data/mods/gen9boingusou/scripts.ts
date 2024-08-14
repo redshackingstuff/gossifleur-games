@@ -1,5 +1,6 @@
 // making hyper beam act like in gen 1 (copied right from the gen 1 code on showdown)
 export const Scripts: ModdedBattleScriptsData = {
+	gen: 9,
 	actions: {
 		useMove(moveOrMoveName, pokemon, target, sourceEffect) {
                         const baseMove = this.battle.dex.moves.get(moveOrMoveName);
@@ -12,7 +13,14 @@ export const Scripts: ModdedBattleScriptsData = {
 			} else {
 	      	if (pokemon.volatiles['mustrecharge']) this.battle.add('-mustrecharge', pokemon);
 				if (pokemon.hp) this.battle.runEvent('AfterMoveSelf', pokemon, target, move);
-			}
-		}
-	}
+			},
+		},
+
+			// old gen boom, hope this works right
+		    getDamage(source, target, move, suppressMessages) {
+			if (move.selfdestruct && defType === 'def') {
+				defense = this.battle.clampIntRange(Math.floor(defense / 2), 1);
+			},
+		},
+	},
 }
