@@ -25558,6 +25558,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			aurasphere: ["8M", "8L1", "7L1", "6L1", "5L1", "5S0", "4L1"],
 			batonpass: ["8M", "8L1"],
 			bodyslam: ["8M"],
+			// Same for breaking swipe
+			breakingswipe: ["9M"],
 			brickbreak: ["8M", "7M", "6M", "5M", "4M"],
 			captivate: ["4M"],
 			charm: ["8M", "8L1"],
@@ -25567,6 +25569,10 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			defog: ["7T", "4M"],
 			doubleedge: ["8L1"],
 			doubleteam: ["7M", "6M", "5M", "4M"],
+			//Dragon Breath, Claw, and Pulse are all to give STAB moves when megad
+			dragonbreath: ["9L1"],
+			dragonclaw: ["9M"],
+			dragonpulse: ["9M"],
 			drainingkiss: ["8M"],
 			drainpunch: ["8M", "7T", "6T", "5T", "4M"],
 			dreameater: ["7M", "6M", "5M", "4M"],
@@ -25613,6 +25619,8 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			nastyplot: ["8M"],
 			naturalgift: ["4M"],
 			ominouswind: ["4T"],
+			// Aaaaand also Outrage
+			outrage: ["9M"],
 			playrough: ["8M"],
 			pluck: ["5M", "4M"],
 			pound: ["8L1"],
