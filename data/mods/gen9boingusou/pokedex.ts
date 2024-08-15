@@ -55,7 +55,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Green",
 		eggGroups: ["Fairy", "Grass"],
 		requiredItem: "Breloomite",
-	}
+	},
 	ceruledge: {
 		inherit: true,
 		otherFormes: ["Ceruledge-Mega"],
