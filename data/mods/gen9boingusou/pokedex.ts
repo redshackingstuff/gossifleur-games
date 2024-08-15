@@ -153,5 +153,23 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Water 3"],
 		requiredItem: "Starmite",
 	},
+	togekiss: {
+		inherit: true,
+		otherFormes: ["Togekiss-Mega"],
+		formeOrder: ["Togekiss", "Togekiss-Mega"],
+	},
+	togekissmega: {
+		num: 468,
+		name: "Togekiss",
+		types: ["Fairy", "Dragon"],
+		genderRatio: {M: 0.875, F: 0.125},
+		baseStats: {hp: 85, atk: 80, def: 105, spa: 140, spd: 155, spe: 80},
+		abilities: {0: "Soul Heart"},
+		heightm: 1.5,
+		weightkg: 52,
+		color: "White",
+		eggGroups: ["Flying", "Fairy"],
+		requiredItem: "Togekissite"
+	}
 
 }
