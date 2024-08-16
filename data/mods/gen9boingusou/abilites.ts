@@ -10,6 +10,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return 0;
 			}
 		},
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Cosplay');
+				return null;
+			}
+		},
 		onCriticalHit(target, source, move) {
 			if (!target) return;
 			if (target.species.id !== 'mimikyumega') {
@@ -35,7 +41,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onUpdate(pokemon) {
 			if (pokemon.species.id === 'mimikyumega' && this.effectState.busted) {
-				const speciesid = pokemon.species.id === 'mimikyutotem' ? 'Mimikyu-Busted-Totem' : 'Mimikyu-Busted';
+				const speciesid = 'mimikyumega-busted';
 				pokemon.formeChange(speciesid, this.effect, true);
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}
