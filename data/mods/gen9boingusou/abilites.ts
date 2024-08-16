@@ -41,7 +41,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		onUpdate(pokemon) {
 			if (pokemon.species.id === 'mimikyumega' && this.effectState.busted) {
-				const speciesid = 'mimikyumega-busted';
+				const speciesid = 'Mimikyu-Mega-Busted';
 				pokemon.formeChange(speciesid, this.effect, true);
 				this.damage(pokemon.baseMaxhp / 8, pokemon, pokemon, this.dex.species.get(speciesid));
 			}

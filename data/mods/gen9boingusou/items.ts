@@ -64,6 +64,19 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		num: 1890,
 		gen: 9,
 	},
+	mimikyuite: {
+		name: "Mimikyuite",
+		spritenum: 41,
+		megaStone: "Mimikyu-Mega",
+		megaEvolves: "Mimikyu",
+		itemUser: ["Mimikyu","Mimikyu-Busted"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true
+		},
+		num: 1896,
+		gen: 9,
+	},
 	sirfetchdite: {
 		name: "Sirfetchdite",
 		spritenum: 41,
