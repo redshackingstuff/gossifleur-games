@@ -46,7 +46,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		},
 		name: "Cosplay",
 		rating: 3.5,
-		num: 312,
+		num: 314,
 	},
 
 	// fungal touch (mega breloom's ability)
@@ -60,7 +60,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		flags: {},
 		name: "Fungal Touch",
 		rating: 3,
-		num: 311,
+		num: 313,
 	},
 
 	// solarize (mega solrock's ability)
@@ -87,6 +87,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Solarize",
 		// do ratings ever even get used?
 		rating: 4,
-		num: 310,
+		num: 311,
 	},
 }
