@@ -117,6 +117,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Amorphous"],
 		otherFormes: ["Mimikyu-Mega-Busted"],
 		formeOrder: ["Mimikyu-Mega", "Mimikyu-Mega-Busted"],
+		requiredItem: "Mimikyuite",
 	},
 	mimikyumegabusted: {
 		num: 778,
