@@ -10,11 +10,11 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				return 0;
 			}
 		},
-		onTryHit(target, source, move) {
-			if (move.category === 'Status' && target !== source) {
+		onSetStatus(status, target, source, effect) {
+			if ((effect as Move)?.status) {
 				this.add('-immune', target, '[from] ability: Cosplay');
-				return null;
 			}
+			return false;
 		},
 		onCriticalHit(target, source, move) {
 			if (!target) return;
