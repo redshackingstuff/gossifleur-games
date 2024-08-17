@@ -17,7 +17,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Red",
 		eggGroups: ["Grass"],
 		requiredItem: "Arbolivite",
-	},  
+	},
 	armarouge: {
 		inherit: true,
 		otherFormes: ["Armarouge-Mega"],
@@ -37,6 +37,25 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Human-Like"],
 		requiredItem: "Armarougite",
 	},
+	breloom: {
+		inherit: true,
+		otherFormes: ["Breloom-Mega"],
+    formeOrder: ["Breloom", "Breloom-Mega"],
+  	},
+	breloommega: {
+		num: 286,
+		name: "Breloom-Mega",
+		baseSpecies: "Breloom",
+		forme: "Mega",
+		types: ["Grass", "Fighting"],
+		baseStats: {hp: 60, atk: 150, def: 120, spa: 50, spd: 110, spe: 60},
+		abilities: {0: "Fungal Touch"},
+		heightm: 1.3,
+		weightkg: 54.3,
+		color: "Green",
+		eggGroups: ["Fairy", "Grass"],
+		requiredItem: "Breloomite",
+	},
 	ceruledge: {
 		inherit: true,
 		otherFormes: ["Ceruledge-Mega"],
@@ -55,7 +74,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Purple",
 		eggGroups: ["Human-Like"],
 		requiredItem: "Ceruledgite",
-	},    
+	},
 	delibird: {
 		inherit: true,
 		otherFormes: ["Delibird-Mega"],
@@ -74,6 +93,46 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Red",
 		eggGroups: ["Water 1", "Field"],
 		requiredItem: "Delibirdite",
+	},
+	mimikyu: {
+		inherit: true,
+		otherFormes: ["Mimikyu-Mega"],
+    	formeOrder: ["Mimikyu", "Mimikyu-Mega"],
+  	},
+	mimikyubusted: {
+		inherit: true,
+		otherFormes: ["Mimikyu-Mega"],
+    	formeOrder: ["Mimikyu-Busted", "Mimikyu-Mega"],
+  	},
+	mimikyumega: {
+		num: 778,
+		name: "Mimikyu-Mega",
+		baseForme: "Disguised",
+		types: ["Ghost", "Fairy"],
+		baseStats: {hp: 55, atk: 120, def: 90, spa: 50, spd: 135, spe: 126},
+		abilities: {0: "Cosplay"},
+		heightm: 0.3,
+		weightkg: 1.0,
+		color: "Yellow",
+		eggGroups: ["Amorphous"],
+		otherFormes: ["Mimikyu-Mega-Busted"],
+		formeOrder: ["Mimikyu-Mega", "Mimikyu-Mega-Busted"],
+		requiredItem: "Mimikyuite",
+	},
+	mimikyumegabusted: {
+		num: 778,
+		name: "Mimikyu-Mega-Busted",
+		baseSpecies: "Mimikyu-Mega",
+		forme: "Busted",
+		types: ["Ghost", "Fairy"],
+		baseStats: {hp: 55, atk: 120, def: 90, spa: 50, spd: 135, spe: 126},
+		abilities: {0: "Cosplay"},
+		heightm: 0.3,
+		weightkg: 1.0,
+		color: "Yellow",
+		eggGroups: ["Amorphous"],
+		requiredAbility: "Cosplay",
+		battleOnly: "Mimikyu-Mega",
 	},
 	sirfetchd: {
 		inherit: true,
@@ -94,7 +153,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Flying", "Field"],
 		requiredItem: "Sirfetchdite",
 	},
-	
+
 	solrock: {
 		inherit: true,
 			otherFormes: ["Solrock-Mega"],
@@ -114,7 +173,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Mineral"],
 		requiredItem: "Solrockite",
 	},
-	
+
 	starmie: {
 		inherit: true,
 		otherFormes: ["Starmie-Mega"],
@@ -134,5 +193,23 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Water 3"],
 		requiredItem: "Starmite",
 	},
+	togekiss: {
+		inherit: true,
+		otherFormes: ["Togekiss-Mega"],
+		formeOrder: ["Togekiss", "Togekiss-Mega"],
+	},
+	togekissmega: {
+		num: 468,
+		name: "Togekiss",
+		types: ["Fairy", "Dragon"],
+		genderRatio: {M: 0.875, F: 0.125},
+		baseStats: {hp: 85, atk: 80, def: 105, spa: 140, spd: 155, spe: 80},
+		abilities: {0: "Soul Heart"},
+		heightm: 1.5,
+		weightkg: 52,
+		color: "White",
+		eggGroups: ["Flying", "Fairy"],
+		requiredItem: "Togekissite"
+	}
 
 }
