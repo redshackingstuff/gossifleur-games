@@ -90,19 +90,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		num: 1891,
 		gen: 9,
 	},
-	starmite: {
-		name: "Starmite",
-		spritenum: 41,
-		megaStone: "Starmie-Mega",
-		megaEvolves: "Starmie",
-		itemUser: ["Starmie"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: 1892,
-		gen: 9,
-	},
 	solrockite: {
 		name: "Solrockite",
 		spritenum: 41,
@@ -112,8 +99,8 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true
-		},
-		num: 1893,
+		}
+		num: 1892,
 		gen: 9,
 	},
 	togekissite: {
@@ -129,4 +116,17 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		num: 1895,
 		gen: 9,
 	},
+	starmite: {
+		name: "Starmite",
+		spritenum: 41,
+		megaStone: "Starmie-Mega",
+		megaEvolves: "Starmie",
+		itemUser: ["Starmie"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1893,
+		gen: 9,
+	}
 }
