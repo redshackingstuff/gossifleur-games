@@ -94,5 +94,16 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		// do ratings ever even get used?
 		rating: 4,
 		num: 311,
-	},
-}
+  },
+
+  lifesteal: {
+
+		onModifyMove(move) {
+         if (move.category === 'Status') return;
+         if (!move.drain) {
+         move.drain = [1, 4];
+            }, else { move.drain[0] += 1 },
+		flags: {},
+		name: "Lifesteal",
+		rating: 4,
+		num: 312,
