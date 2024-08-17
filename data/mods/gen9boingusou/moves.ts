@@ -57,7 +57,7 @@ export const Moves: import('../../../sim/dex-moves').MoveDataTable = {
 		type: "Bug",
 		contestType: "Clever",
 	},
-	hiddenpowerdark: {
+	physhiddenpowerdark: {
 		num: 1001,
 		accuracy: 100,
 		basePower: 60,
@@ -153,7 +153,7 @@ export const Moves: import('../../../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Clever",
 	},
-	hiddenpowerghost: {
+	physhiddenpowerghost: {
 		num: 237,
 		accuracy: 100,
 		basePower: 60,
