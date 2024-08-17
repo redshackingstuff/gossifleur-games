@@ -25,6 +25,19 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		num: 1888,
 		gen: 9,
 	},
+	breloomite: {
+		name: "Breloomite",
+		spritenum: 608,
+		megaStone: "Breloom-Mega",
+		megaEvolves: "Breloom",
+		itemUser: ["Breloom"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1894,
+		gen: 9,
+	},
 	ceruledgite: {
 		name: "Ceruledgite",
 		spritenum: 41,
@@ -49,6 +62,19 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			return true;
 		},
 		num: 1890,
+		gen: 9,
+	},
+	mimikyuite: {
+		name: "Mimikyuite",
+		spritenum: 41,
+		megaStone: "Mimikyu-Mega",
+		megaEvolves: "Mimikyu",
+		itemUser: ["Mimikyu","Mimikyu-Busted"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true
+		},
+		num: 1896,
 		gen: 9,
 	},
 	sirfetchdite: {
@@ -79,15 +105,28 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 	},
 	solrockite: {
 		name: "Solrockite",
-		sprtienum: 41,
+		spritenum: 41,
 		megaStone: "Solrock-Mega",
-		MegaEvolves: "Solrock",
+		megaEvolves: "Solrock",
 		itemUser: ["Solrock"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true
 		},
-		num: 1889,
+		num: 1893,
+		gen: 9,
+	},
+	togekissite: {
+		name: "Togekissite",
+		spritenum: 41,
+		megaStone: "Togekiss-Mega",
+		megaEvolves: "Togekiss",
+		itemUser: ["Togekiss"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true
+		},
+		num: 1895,
 		gen: 9,
 	},
 }

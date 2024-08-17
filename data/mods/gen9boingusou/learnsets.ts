@@ -1,4 +1,4 @@
-export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
+export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTable = {
 	missingno: {
 		learnset: {
 			blizzard: ["3L1"],
@@ -25558,6 +25558,8 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			aurasphere: ["8M", "8L1", "7L1", "6L1", "5L1", "5S0", "4L1"],
 			batonpass: ["8M", "8L1"],
 			bodyslam: ["8M"],
+			// Same for breaking swipe
+			breakingswipe: ["9M"],
 			brickbreak: ["8M", "7M", "6M", "5M", "4M"],
 			captivate: ["4M"],
 			charm: ["8M", "8L1"],
@@ -25567,6 +25569,10 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			defog: ["7T", "4M"],
 			doubleedge: ["8L1"],
 			doubleteam: ["7M", "6M", "5M", "4M"],
+			//Dragon Breath, Claw, and Pulse are all to give STAB moves when megad
+			dragonbreath: ["9L1"],
+			dragonclaw: ["9M"],
+			dragonpulse: ["9M"],
 			drainingkiss: ["8M"],
 			drainpunch: ["8M", "7T", "6T", "5T", "4M"],
 			dreameater: ["7M", "6M", "5M", "4M"],
@@ -25613,6 +25619,8 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			nastyplot: ["8M"],
 			naturalgift: ["4M"],
 			ominouswind: ["4T"],
+			// Aaaaand also Outrage
+			outrage: ["9M"],
 			playrough: ["8M"],
 			pluck: ["5M", "4M"],
 			pound: ["8L1"],
@@ -32425,7 +32433,6 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			dig: ["9M", "8M", "7V", "6M", "5M", "4M", "3M"],
 			doubleedge: ["9M", "3T"],
 			doubleteam: ["7M", "7V", "6M", "5M", "4M", "3M"],
-			earthpower: ["9M"],
 			ember: ["9L1", "8L1", "7L8", "7V", "6L8", "5L8", "4L8", "3L11", "3S0"],
 			endure: ["9M", "8M", "7V", "4M", "3T"],
 			eruption: ["9L78", "8L78", "7L1", "6L1", "5L85", "4L85"],
@@ -36755,6 +36762,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			focuspunch: ["9M", "9L55", "7T", "6T", "4M", "3M"],
 			forcepalm: ["9L28", "7L28", "6L28", "5L29", "4L29"],
 			frustration: ["7M", "6M", "5M", "4M", "3M"],
+			fungaljab: ["9L1"], //Breloom's Signature Move (see moves.ts)
 			furycutter: ["4T", "3T"],
 			gigadrain: ["9M", "7T", "6T", "5T", "4M", "3M"],
 			gigaimpact: ["9M", "7M", "6M", "5M", "4M"],
@@ -38176,14 +38184,12 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			icebeam: ["7M", "6M", "5M", "4M", "3M"],
 			icywind: ["7T", "6T", "5T", "4T", "3T"],
 			irontail: ["7T", "6T", "5T", "4M", "3M"],
-			knockoff: ["8M"],
 			laserfocus: ["7T"],
 			lastresort: ["7T", "6T", "5T", "4T"],
 			mimic: ["3T"],
 			mudslap: ["4T", "3T"],
 			naturalgift: ["4M"],
 			payback: ["7M", "6M", "5M", "4M"],
-			playrough: ["8M"],
 			protect: ["7M", "6M", "5M", "4M", "3M"],
 			psychup: ["7M", "6M", "5M", "4M", "3T"],
 			raindance: ["7M", "6M", "5M", "4M", "3M"],
@@ -38209,7 +38215,6 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			swagger: ["7M", "6M", "5M", "4M", "3T"],
 			sweetkiss: ["3S0"],
 			swift: ["4T", "3T"],
-			swordsdance: ["8M"],
 			thunder: ["7M", "6M", "5M", "4M", "3M"],
 			thunderbolt: ["7M", "6M", "5M", "4M", "3M"],
 			thunderwave: ["7M", "6M", "5M", "4M", "3T"],
@@ -88574,7 +88579,6 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			absorb: ["9L5"],
 			alluringvoice: ["9M"],
 			bulletseed: ["9M"],
-			calmmind: ["9M"],
 			charm: ["9M"],
 			dazzlinggleam: ["9M"],
 			earthpower: ["9M"],
@@ -88582,9 +88586,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			endure: ["9M"],
 			energyball: ["9M", "9L34"],
 			facade: ["9M"],
-			fireblast: ["9M"],
 			flail: ["9L16"],
-			flamethrower: ["9M"],
 			fling: ["9M"],
 			gigadrain: ["9M"],
 			gigaimpact: ["9M"],

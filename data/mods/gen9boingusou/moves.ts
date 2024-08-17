@@ -1,4 +1,24 @@
-export const Moves: import('../sim/dex-moves').MoveDataTable = {
+export const Moves: import('../../../sim/dex-moves').MoveDataTable = {
+	fungaljab: {
+		num: 920,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Fungal Jab",
+		pp: 10,
+		priority: 0,
+		drain: [1, 2],
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1, heal: 1, metronome: 1},
+		onModifyMove(move, pokemon, target) {
+			if (target && (target.status === 'psn' || target.status === 'tox' || target.status === 'prz'  || target.status === 'slp' || target.hasAbility('comatose'))) {
+				move.drain = [3, 4];
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Grass",
+		contestType: "Tough",
+	},
 
 //this is quite literally gonna be called phys hidden power, cause no one has come up with a good name yet, and its a very simple name
 //the moves are just copy and pasted, im just hoping that the code for normal hp will work for phys hp, but i may need to look into that
