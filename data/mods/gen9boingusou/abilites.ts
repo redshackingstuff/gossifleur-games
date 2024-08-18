@@ -101,8 +101,13 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onModifyMove(move) {
          if (move.category === 'Status') return;
          if (!move.drain) {
-         move.drain = [1, 4];
-            }, else { move.drain[0] += 1 },
+         	move.drain = [1, 4];
+         } else {
+				var oldDrain = move.drain[1];
+				move.drain[1] = 4;
+				move.drain[0] = (move.drain[0] * (4/oldDrain)) + 1;
+			}
+		},
 		flags: {},
 		name: "Lifesteal",
 		rating: 4,
