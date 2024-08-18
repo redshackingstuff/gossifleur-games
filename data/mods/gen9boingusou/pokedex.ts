@@ -102,7 +102,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	mimikyumega: {
 		num: 778,
 		name: "Mimikyu-Mega",
-		baseForme: "Disguised",
 		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 55, atk: 120, def: 90, spa: 50, spd: 135, spe: 126},
 		abilities: {0: "Cosplay"},
@@ -116,7 +115,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		num: 778,
 		name: "Mimikyu-Mega-Busted",
 		baseSpecies: "Mimikyu",
-		forme: "Busted",
+		forme: "Mega-Busted",
 		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 55, atk: 120, def: 90, spa: 50, spd: 135, spe: 126},
 		abilities: {0: "Cosplay"},
