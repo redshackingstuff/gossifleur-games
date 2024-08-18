@@ -97,12 +97,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	mimikyu: {
 		inherit: true,
 		otherFormes: ["Mimikyu-Mega"],
-    	formeOrder: ["Mimikyu", "Mimikyu-Mega"],
-  	},
-	mimikyubusted: {
-		inherit: true,
-		otherFormes: ["Mimikyu-Mega"],
-    	formeOrder: ["Mimikyu-Busted", "Mimikyu-Mega"],
+    	formeOrder: ["Mimikyu", "Mimikyu-Busted", "Mimikyu-Mega", "Mimikyu-Mega-Busted"],
   	},
 	mimikyumega: {
 		num: 778,
@@ -115,8 +110,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		weightkg: 1.0,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
-		otherFormes: ["Mimikyu-Mega-Busted"],
-		formeOrder: ["Mimikyu-Mega", "Mimikyu-Mega-Busted"],
 		requiredItem: "Mimikyuite",
 	},
 	mimikyumegabusted: {
