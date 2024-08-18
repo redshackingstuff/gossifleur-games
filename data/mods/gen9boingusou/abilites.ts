@@ -112,3 +112,5 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Lifesteal",
 		rating: 4,
 		num: 312,
+  }
+}
