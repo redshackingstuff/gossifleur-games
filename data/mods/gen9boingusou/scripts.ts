@@ -3,11 +3,11 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
 	actions: {
-			// old gen boom, hope this works right
-		    getDamage(source, target, move, suppressMessages) {
+		// old gen boom, hope this works right
+		getDamage(source, target, move, suppressMessages) {
 			if (move.selfdestruct && defType === 'def') {
 				defense = this.battle.clampIntRange(Math.floor(defense / 2), 1);
-			},
+			}
 		},
 	},
 }
