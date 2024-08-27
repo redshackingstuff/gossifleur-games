@@ -51,6 +51,19 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		num: 1889,
 		gen: 9,
 	},
+	chesnaughtite: {
+		name: "Chesnaughtite",
+		spritenum: 41,
+		megaStone: "Chesnaught-Mega",
+		megaEvolves: "Chesnaught",
+		itemUser: ["Chesnaught"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1899,
+		gen: 9,
+	},
 	clawitzerite: {
 		name: "Clawitzerite",
 		spritenum: 41,
@@ -75,6 +88,32 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 			return true;
 		},
 		num: 1890,
+		gen: 9,
+	},
+	delphoxite: {
+		name: "Delphoxite",
+		spritenum: 41,
+		megaStone: "Delphox-Mega",
+		megaEvolves: "Delphox",
+		itemUser: ["Delphox"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1901,
+		gen: 9,
+	},
+	greninite: {
+		name: "Greninite",
+		spritenum: 41,
+		megaStone: "Greninja-Mega",
+		megaEvolves: "Greninja",
+		itemUser: ["Greninja"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 1900,
 		gen: 9,
 	},
 	mimikyuite: {
