@@ -75,6 +75,25 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		eggGroups: ["Human-Like"],
 		requiredItem: "Ceruledgite",
 	},
+	clawitzer: {
+		inherit: true,
+		otherFormes: ["Clawitzer-Mega"],
+		formeOrder: ["Clawitzer", "Clawitzer-Mega"]
+	},
+	clawitzermega: {
+		num: 693,
+		name: "Clawitzer-Mega",
+		baseSpecies: "Clawitzer",
+		forme: "Mega",
+		types: ["Water", "Dragon"],
+		baseStats: {hp: 71, atk: 80, def: 108, spa: 140, spd: 108, spe: 93},
+		abilities: {0: "Mega Launcher"},
+		heightm: 1.3,
+		weightkg: 35.3,
+		color: "Blue",
+		eggGroups: ["Water 1", "Water 3"],
+		requiredItem: "Clawitzerite",
+	},
 	delibird: {
 		inherit: true,
 		otherFormes: ["Delibird-Mega"],
@@ -93,6 +112,25 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		color: "Red",
 		eggGroups: ["Water 1", "Field"],
 		requiredItem: "Delibirdite",
+	},
+	lunatone: {
+		inherit: true,
+		otherFormes: ["Lunatone-Mega"],
+		formeOrder: ["Lunatone", "Lunatone-Mega"]
+	},
+	lunatonemega: {
+		num: 337,
+		name: "Lunatone-Mega",
+		baseSpecies: "Lunatone",
+		forme: "Mega",
+		types: ["Water", "Rock"],
+		baseStats: {hp: 90, atk: 55, def: 95, spa: 120, spd: 110, spe: 90},
+		abilities: {0: "PsyTide"},
+		heightm: 1.0,
+		weightkg: 168,
+		color: "Yellow",
+		eggGroups: ["Minera;"],
+		requiredItem: "Lunatonite",
 	},
 	mimikyu: {
 		inherit: true,
